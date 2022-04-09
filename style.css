@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Imgs/Norse-Bold.otf);
+}
+
 body{
     padding: 0px;
     margin: 0px;
@@ -11,8 +16,22 @@ body{
     grid-template-rows: 40vh 35vh 25vh;
 }
 
-.img, .sidebar1, .sidebar2, .sidebar3 {
-    background-color: brown;
+.sidebar1, .sidebar3 {
+    background-color: white;
+}
+
+.sidebar1{
+    margin-top: 5%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    gap: 25px;
 }
 
 .img{
@@ -20,7 +39,30 @@ body{
     position: relative;
 }
 .sidebar2 {
-    background-color: tomato;
+    padding-left: 5%;
+    margin-bottom: 20px;
+    font-size: 25px;
+    border-top: 1px solid #cfcfcf;
+    box-shadow: 5px 10px 8px #888888;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form  div{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: flex-start;
+    gap: 5px;
+}
+form{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 200px;
 }
 
 .tree{
@@ -34,12 +76,49 @@ body{
     width: 100%;
     height: 20vh;
     background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    color: white;
+    font-size: 8rem;
+    font-family: Norse-Bold;
+}
+.logo{
+    height: 18vh;
 }
 
+.sidebar3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 5%;
+    margin-top: 3%;
+    font-size: 30px;
+    gap: 25px;
+}
+button{
+    font-size: 30px;
+    align-items: center;
+    width: 30%;
+    padding: 15px 35px 15px 35px;
+    border-radius: 12px;
+    color: white;
+    background-color: rgb(89, 128, 72);
+}
 
+#color{
+    font-weight: 600;
+    color: rgb(89, 108, 72);
+}
 
-
-
-
-
-
+input{
+    height: 3vh;
+    width: 400px;
+}
+input:focus{
+    border: 2px solid blue;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5)
+}
